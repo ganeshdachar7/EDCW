@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Enter a number:"
+echo "Enter a number:, "
 read num
 
 fact=1

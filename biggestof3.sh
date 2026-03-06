@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Enter numbers separated by space1:"
+echo "Enter numbers separated by space:"
 read -a nums
 
 # Sort numbers in descending order

@@ -54,7 +54,6 @@
 //     }
 // }
 
-<<<<<<< HEAD
 // pipeline 
 // {
 //     agent any 
@@ -69,7 +68,6 @@
 //                 whoami
 //                 uname -a
 //                 }
-=======
 pipeline 
 {
     agent any 
@@ -83,7 +81,6 @@ pipeline
                 whoami
                 uname -a
                 '''
->>>>>>> e62fc6855b5165d403ed292ca6ff142481bb21b5
                 
 //             }
 //         }

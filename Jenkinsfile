@@ -63,11 +63,10 @@ pipeline
         {
             steps
             {
-                sh{
-
+                sh '''
                 whoami
                 uname -a
-                }
+                '''
                 
             }
         }
@@ -75,11 +74,10 @@ pipeline
         {
             steps
             {
-                sh{
+                sh '''
                      pwd
                 ls -lrt
-                }
-               
+                '''
             }
         }
     }

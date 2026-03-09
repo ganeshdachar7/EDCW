@@ -26,30 +26,55 @@
 //     }
 // }
 
+// pipeline 
+// {
+//     agent any 
+//     stages{
+//         stage('Build')
+//         {
+//             steps{
+//                 echo "Building application"
+//             }
+//         }
+//         stage('Test')
+//         {
+//             steps
+//             {
+//                 echo "Testing application"
+//             }
+//         }
+//         stage('Deloy')
+//         {
+//             steps
+//             {
+//                 echo "Deploying application"   
+//             }
+//         }
+
+//     }
+// }
+
 pipeline 
 {
     agent any 
-    stages{
-        stage('Build')
-        {
-            steps{
-                echo "Building application"
-            }
-        }
-        stage('Test')
+    stages 
+    {
+        stage('System Info')
         {
             steps
             {
-                echo "Testing application"
+                whoami
+                uname -a
             }
         }
-        stage('Deloy')
+        stage('Check Files')
         {
             steps
             {
-                echo "Deploying application"   
+                pwd
+                ls -lrt
             }
         }
-
     }
 }
+

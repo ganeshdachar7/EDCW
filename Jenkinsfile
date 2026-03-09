@@ -169,7 +169,7 @@ pipeline {
 
         stage('Password Usage') {
             steps {
-                echo "Password length is: ${params.PASSWORD.length()}"
+                echo "Password parameter received"
             }
         }
 

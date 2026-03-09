@@ -1,14 +1,27 @@
-pipeline{
-    stages{
-        stage('Stage1'){
-            steps{
-                echo "This is the stage 1"
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Build') {
+            steps {
+                echo 'Building application'
+                sh 'date'
             }
         }
-        stage('stage2'){
-            steps{
-                echo "This is the stage 2"
+
+        stage('Test') {
+            steps {
+                echo 'Running tests'
+                sh 'whoami'
             }
         }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying application'
+            }
+        }
+
     }
 }

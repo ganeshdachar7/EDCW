@@ -54,6 +54,7 @@
 //     }
 // }
 
+<<<<<<< HEAD
 // pipeline 
 // {
 //     agent any 
@@ -68,6 +69,21 @@
 //                 whoami
 //                 uname -a
 //                 }
+=======
+pipeline 
+{
+    agent any 
+    stages 
+    {
+        stage('System Info')
+        {
+            steps
+            {
+                sh '''
+                whoami
+                uname -a
+                '''
+>>>>>>> e62fc6855b5165d403ed292ca6ff142481bb21b5
                 
 //             }
 //         }
@@ -94,8 +110,15 @@ pipeline
         {
             steps
             {
+<<<<<<< HEAD
                 echo "Running on master node"
                 sh 'hostname'
+=======
+                sh '''
+                     pwd
+                ls -lrt
+                '''
+>>>>>>> e62fc6855b5165d403ed292ca6ff142481bb21b5
             }
         }
     }

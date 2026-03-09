@@ -63,16 +63,23 @@ pipeline
         {
             steps
             {
+                sh{
+
                 whoami
                 uname -a
+                }
+                
             }
         }
         stage('Check Files')
         {
             steps
             {
-                pwd
+                sh{
+                     pwd
                 ls -lrt
+                }
+               
             }
         }
     }

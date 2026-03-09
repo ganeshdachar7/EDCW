@@ -110,15 +110,8 @@ pipeline
         {
             steps
             {
-<<<<<<< HEAD
                 echo "Running on master node"
                 sh 'hostname'
-=======
-                sh '''
-                     pwd
-                ls -lrt
-                '''
->>>>>>> e62fc6855b5165d403ed292ca6ff142481bb21b5
             }
         }
     }

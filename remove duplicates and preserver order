@@ -1,0 +1,11 @@
+#Remove duplicates from list (keep order)
+
+num = list(map(int, input("Enter the numbers: ").split()))
+
+result = []
+
+for i in num:
+    if i not in result:
+        result.append(i)
+print(result)
+

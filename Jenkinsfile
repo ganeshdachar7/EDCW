@@ -68,19 +68,19 @@
 //                 whoami
 //                 uname -a
 //                 }
-pipeline 
-{
-    agent any 
-    stages 
-    {
-        stage('System Info')
-        {
-            steps
-            {
-                sh '''
-                whoami
-                uname -a
-                '''
+// pipeline 
+// {
+//     agent any 
+//     stages 
+//     {
+//         stage('System Info')
+//         {
+//             steps
+//             {
+//                 sh '''
+//                 whoami
+//                 uname -a
+//                 '''
                 
 //             }
 //         }

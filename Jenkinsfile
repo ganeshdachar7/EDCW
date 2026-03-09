@@ -1,25 +1,53 @@
-pipeline {
-    agent any
+// pipeline {
+//     agent any
 
-    stages {
+//     stages {
 
-        stage('Build') {
-            steps {
-                echo 'Building application'
-                sh 'date'
+//         stage('Build') {
+//             steps {
+//                 echo 'Building application'
+//                 sh 'date'
+//             }
+//         }
+
+//         stage('Test') {
+//             steps {
+//                 echo 'Running tests'
+//                 sh 'whoami'
+//             }
+//         }
+
+//         stage('Deploy') {
+//             steps {
+//                 echo 'Deploying application'
+//             }
+//         }
+
+//     }
+// }
+
+pipeline 
+{
+    agents any 
+    stages{
+        stage('Build')
+        {
+            steps{
+                echo "Building application"
             }
         }
-
-        stage('Test') {
-            steps {
-                echo 'Running tests'
-                sh 'whoami'
+        stage('Test')
+        {
+            steps
+            {
+                echo "Testing application"
             }
         }
-
-        stage('Deploy') {
-            steps {
-                echo 'Deploying application'
+        stage('Deloy')
+        {
+            steps
+            {
+                echo "Deploying application"   
             }
         }
 

@@ -54,32 +54,48 @@
 //     }
 // }
 
-pipeline 
-{
-    agent any 
-    stages 
-    {
-        stage('System Info')
-        {
-            steps
-            {
-                sh{
+// pipeline 
+// {
+//     agent any 
+//     stages 
+//     {
+//         stage('System Info')
+//         {
+//             steps
+//             {
+//                 sh{
 
-                whoami
-                uname -a
-                }
+//                 whoami
+//                 uname -a
+//                 }
                 
-            }
-        }
-        stage('Check Files')
+//             }
+//         }
+//         stage('Check Files')
+//         {
+//             steps
+//             {
+//                 sh{
+//                      pwd
+//                 ls -lrt
+//                 }
+               
+//             }
+//         }
+//     }
+// }
+
+pipeline
+{
+    agent slave1
+    stages
+    {
+        stage('node check')
         {
             steps
             {
-                sh{
-                     pwd
-                ls -lrt
-                }
-               
+                echo "Running on master node"
+                sh 'hostname'
             }
         }
     }

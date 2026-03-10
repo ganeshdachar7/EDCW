@@ -1,4 +1,4 @@
-lim = int(input("Enter the limit: "))
+lim = int(input("Enter the limit to find the fibonacci: "))
 
 
 num1=0
